@@ -1,0 +1,454 @@
+:root {
+    --green: #44ffa1;
+    --purple-900: #24053e;
+    --purple-500: #584d62;
+    --purple-100: #fcf8ff;
+    --white: #fff;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('/resources/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('/resources/fonts/manrope/Manrope-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('/resources/images/bg-pattern-1.svg'), url('/resources/images/bg-pattern-2.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: -10% 65%, 104% 95%;
+    background-size: 20%, 10%;
+    background-color: var(--purple-900);
+    position: relative;
+    height: 35rem;
+    z-index: 200;
+}
+
+.header-wave {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.header-wave svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 123px;
+}
+
+.header-wave .shape-fill {
+    fill: #24053E;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 7vh 10vw;
+}
+
+nav .nav-button {
+    background-color: var(--purple-900);
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid var(--green);
+    color: var(--white);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 1vh 0vw;
+    transition: 0.2s ease;
+}
+
+nav .nav-button:hover {
+    color: var(--green);
+    cursor: pointer;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5vh 5vw 4vh;
+    gap: 5vh;
+    text-align: center;
+}
+
+.header-title h1 {
+    color: white;
+    font-family: 'Fraunces', serif;
+    font-size: 4rem;
+}
+
+.header-title h1 .tailored {
+    text-decoration: 3.5px solid underline var(--green);
+    text-underline-offset: 2vh;
+}
+
+.header-title .title-button {
+    border: 2px solid transparent;
+    background-color: var(--green);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--purple-900);
+    padding: 1.5vh 2.5vw;
+    transition: 0.2s ease;
+}
+
+.header-title .title-button:hover {
+    border: 2px solid var(--green);
+    background-color: var(--purple-900);
+    color: var(--green);
+}
+
+.header-image {
+    position: relative;
+    text-align: center;
+}
+
+.header-image img {
+    width: 35rem;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5vh;
+}
+
+.selling-points {
+    position: relative;
+    background-color: var(--purple-100);
+    min-height: 30rem;
+    z-index: 100;
+}
+
+.sp-wave {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.sp-wave svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 123px;
+}
+
+.sp-wave {
+    fill: #FCF8FF;
+}
+
+.sp-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+    padding: 25vh 10vw 12vh;
+    text-align: center;
+}
+
+.sp-one, .sp-two, .sp-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.sp-details .circle {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid var(--purple-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--purple-900);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.sp-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding-top: 3vh;
+}
+
+.sp-info h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--purple-900);
+}
+
+.sp-info p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    color: var(--purple-900);
+    line-height: 1.7rem;
+}
+
+.founder {
+    background-color: var(--white);
+    margin: 10rem;
+}
+
+.founder-flex-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.founder-img {
+    width: 400px;
+    height: 400px;
+    margin-right: -7rem;
+}
+
+.access-card {
+    position: relative;
+    margin-top: 11rem;
+}
+
+.access-card-content {
+    background-color: var(--purple-900);
+    padding: 5vh 3vw;
+    width: 45vw;
+    min-height: 30vh;
+}
+
+.access-card-content h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 2.7rem;
+    color: var(--white);
+    margin-bottom: 1.5vh;
+}
+
+.access-card-content  p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    color: var(--purple-100);
+    margin-bottom: 2.5vh;
+}
+
+.access-card-content .founder-button {
+    background-color: var(--green);
+    border: 2px solid transparent;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--purple-900);
+    transition: 0.2s ease;
+    padding: 1.5vh 2vw;
+}
+
+.access-card-content .founder-button:hover {
+    border: 2px solid var(--green);
+    color: var(--green);
+    background-color: var(--purple-900);
+}
+
+.bg-pattern-3 {
+    position: absolute;
+    position: 70%;
+    left: 60%;
+}
+
+.footer-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.social-icons img {
+    transition: filter 0.2s ease;
+}
+
+.social-icons img:hover {
+    filter: brightness(0);
+    cursor: pointer;
+}
+
+/* Bigger Screens Responsive */
+@media screen and (max-width: 2560px) {
+    header {
+        height: 45rem;
+    }
+
+    .header-image img {
+        width: 45rem;
+    }
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 33rem;
+    }
+
+    .header-image img {
+        width: 30rem;
+    }
+
+    .sp-details {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-top: 20vh;
+        padding-bottom: 10vh;
+    }
+
+    .sp-one, .sp-two, .sp-three {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5vw;
+        padding: 0vh 5vw;
+    }
+
+    .sp-details .circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        flex-shrink: 0;
+    }
+
+    .access-card-content {
+        width: 55vw;
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    header {
+        background-image: none !important;
+        height: 30rem;
+    }
+
+    nav {
+        padding: 5vh 5vw;
+    }
+
+    .header-title {
+        padding: 2vh 5vw 5vh;
+        gap: 3vh;
+    }
+
+    .header-title h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .header-title h1 .tailored {
+        text-underline-offset: 1vh;
+    }
+
+    .header-title .title-button {
+        padding: 2vh 6vw;
+        font-size: 1rem;
+    }
+
+    .header-image img {
+        width: 22rem;
+        padding-top: 3vh;
+    }
+
+    .sp-details {
+        flex-direction: column;
+        padding: 15vh 5vw 8vh;
+        gap: 4vh;
+        text-align: left;
+    }
+
+    .founder {
+        margin: 7rem 1rem;
+    }
+
+    .founder-flex-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .founder-img {
+        width: 280px;
+        height: 280px;
+        margin-right: 0;
+        margin-bottom: -3rem;
+        z-index: 100;
+        position: relative;
+    }
+
+    .access-card {
+        margin-top: -2rem;
+        z-index: 200;
+    }
+
+    .access-card-content {
+        width: 100%;
+        padding: 8vh 5vw 6vh;
+        text-align: center;
+    }
+
+    .access-card-content h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 2vh;
+    }
+
+    .access-card-content p {
+        font-size: 1rem;
+        line-height: 1.7rem;
+        margin-bottom: 4vh;
+    }
+    
+    .bg-pattern-3 {
+        display: none;
+    }
+
+    .footer-elements {
+        gap: 3vh;
+        margin: 8vh 0 5vh;
+        padding: 0 5vw;
+    }
+
+    .social-icons {
+        gap: 5vw;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
