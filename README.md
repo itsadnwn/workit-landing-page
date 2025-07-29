@@ -31,7 +31,7 @@
 <p>This project was built with:</p>
 <ul>
   <li><strong>HTML:</strong> Markup language for creating the content and structure.</li>
-  <li><strong>shapedivider.app</strong>: For creating custom background shapes
+  <li><strong>shapedivider.app</strong>: For creating custom background shapes</li>
   <li><strong>CSS:</strong> For styling both web and mobile versions.</li>
 </ul>
 
@@ -82,7 +82,7 @@
 <div>
   <h3>⭐ Image Color Transition</h3>
   <ul>
-    <li><strong>Property:</strong> <code>filter</filter> transition for SVG and image elements</li>
+    <li><strong>Property:</strong> <code>filter</code> transition for SVG and image elements</li>
     <li>Enables smooth color changes during hover states</li>
     <li>Provides polished visual feedback for interactive elements</li>
   </ul>
